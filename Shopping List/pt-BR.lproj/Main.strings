@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; configuration.title = "Enviar"; ObjectID = "BVK-ff-QAR"; */
+"BVK-ff-QAR.configuration.title" = "Enviar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BVK-ff-QAR"; */
+"BVK-ff-QAR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Altura"; ObjectID = "GxB-tH-GoZ"; */
+"GxB-tH-GoZ.text" = "Altura";
+
+/* Class = "UITextField"; placeholder = "Ex: 12345"; ObjectID = "xky-jy-wYn"; */
+"xky-jy-wYn.placeholder" = "Ex: 12345";

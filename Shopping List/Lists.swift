@@ -11,11 +11,20 @@ import UIKit
 class Lists:UIViewController, UITableViewDelegate, UITableViewDataSource{
   
   @IBOutlet weak var tabela: UITableView!
-  var elements = [["name":"Supermercado","itens":"30"], ["name":"Happy hour","itens":"10"],["name":"Almoço de domingo","itens":"5"]]
+  var elements = NSMutableArray()
   
   override func viewDidLoad() {
     tabela.delegate = self
     tabela.dataSource = self
+    
+    let global = Global()
+    let database = global.leituraPlist(nome: "Database")
+    print(database)
+    elements = (database["listas"] as? NSMutableArray)!
+    
+//    let dicionario = NSMutableDictionary()
+//    dicionario["listas"] = elements
+//    global.salvarPlist(oDicionario: dicionario, naPlist: "Database")
   }
   
   func numberOfSections(in tableView: UITableView) -> Int {
@@ -33,11 +42,11 @@ class Lists:UIViewController, UITableViewDelegate, UITableViewDataSource{
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cellIdentifier = "ListsCell"
     let cell:ListsCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ListsCell
-    let dicionario = elements[indexPath.row]
-    let name = dicionario["name"]
+    let dicionario = elements.object(at: indexPath.row) as? NSDictionary
+    let name = dicionario?["name"] as? String
     
     cell.titulo.text = name
-    cell.quantidade.text = dicionario["itens"]
+    cell.quantidade.text = dicionario?["itens"] as? String
     
     return cell
   }

@@ -16,6 +16,7 @@
 		489D75F32C5967ED005F10E8 /* ListsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D75F22C5967ED005F10E8 /* ListsCell.swift */; };
 		489D75F52C59718B005F10E8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D75F42C59718B005F10E8 /* Global.swift */; };
 		489D75F72C5972CD005F10E8 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D75F62C5972CD005F10E8 /* Details.swift */; };
+		489D75F92C59848B005F10E8 /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 489D75F82C59848B005F10E8 /* Database.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		489D75F22C5967ED005F10E8 /* ListsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsCell.swift; sourceTree = "<group>"; };
 		489D75F42C59718B005F10E8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		489D75F62C5972CD005F10E8 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		489D75F82C59848B005F10E8 /* Database.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				484A89662C57D73A0055DFE2 /* Assets.xcassets */,
 				484A89682C57D73A0055DFE2 /* LaunchScreen.storyboard */,
 				484A896B2C57D73A0055DFE2 /* Info.plist */,
+				489D75F82C59848B005F10E8 /* Database.plist */,
 			);
 			path = "Shopping List";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				484A89672C57D73A0055DFE2 /* Assets.xcassets in Resources */,
+				489D75F92C59848B005F10E8 /* Database.plist in Resources */,
 				484A896A2C57D73A0055DFE2 /* Base in Resources */,
 				484A89652C57D7390055DFE2 /* Base in Resources */,
 			);

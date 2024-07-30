@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hOc-ky-oud">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lists-->
+        <!--Meu App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Lists" customModule="Shopping_List" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Lists" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="Lists" customModule="Shopping_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mxv-f5-LKq">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ListsCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListsCell" rowHeight="60" id="I6c-7W-rom" customClass="ListsCell" customModule="Shopping_List" customModuleProvider="target">
@@ -74,13 +74,67 @@
                             <constraint firstItem="mxv-f5-LKq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x2P-aP-SS2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Meu App" id="uf6-od-wB1"/>
                     <connections>
                         <outlet property="tabela" destination="mxv-f5-LKq" id="cDb-li-Tb2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-260" y="32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q4g-XD-OsU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hOc-ky-oud" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IUp-gF-tk7">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h6P-Yb-E1I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arY-Ys-AEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-927.48091603053433" y="31.690140845070424"/>
+        </scene>
+        <!--Detalhes da minha lista-->
+        <scene sceneID="hXm-1g-z0v">
+            <objects>
+                <viewController storyboardIdentifier="details" title="Detalhes da minha lista" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5HM-qt-t5C" customClass="Details" customModule="Shopping_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4h-3W-eBY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaN-WK-ZYk">
+                                <rect key="frame" x="16" y="198" width="361" height="20.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="20.329999999999998" id="MjN-pb-PNi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JEn-aP-LPI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JEn-aP-LPI" firstAttribute="trailing" secondItem="DaN-WK-ZYk" secondAttribute="trailing" constant="16" id="klo-fg-MtE"/>
+                            <constraint firstItem="DaN-WK-ZYk" firstAttribute="top" secondItem="JEn-aP-LPI" secondAttribute="top" constant="139" id="qMC-la-iPX"/>
+                            <constraint firstItem="DaN-WK-ZYk" firstAttribute="leading" secondItem="JEn-aP-LPI" secondAttribute="leading" constant="16" id="wGZ-F3-RmR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meu App" id="dn7-YO-71N"/>
+                    <connections>
+                        <outlet property="descricao" destination="DaN-WK-ZYk" id="tDS-Ig-CRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8o-lT-Q7R" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409.92366412213738" y="31.690140845070424"/>
         </scene>
     </scenes>
     <resources>

@@ -50,6 +50,12 @@ class Lists:UIViewController, UITableViewDelegate, UITableViewDataSource{
     let dicionario = elements[indexPath.row]
     print(dicionario)
     tabela.reloadData()
+    
+    let global = Global()
+    let details = Details()
+    Global.parametros = NSMutableDictionary()
+    Global.parametros?["resultado"] = dicionario
+    global.proximaView(viewController: details, id: "details", navigation: self.navigationController!, storyboardName: "Main")
   }
   
 }

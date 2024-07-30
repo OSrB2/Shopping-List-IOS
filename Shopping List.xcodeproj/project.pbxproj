@@ -14,6 +14,8 @@
 		484A896A2C57D73A0055DFE2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 484A89692C57D73A0055DFE2 /* Base */; };
 		484A89722C57DA5B0055DFE2 /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A89712C57DA5B0055DFE2 /* Lists.swift */; };
 		489D75F32C5967ED005F10E8 /* ListsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D75F22C5967ED005F10E8 /* ListsCell.swift */; };
+		489D75F52C59718B005F10E8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D75F42C59718B005F10E8 /* Global.swift */; };
+		489D75F72C5972CD005F10E8 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D75F62C5972CD005F10E8 /* Details.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		489D75EC2C5957E9005F10E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		489D75ED2C5957E9005F10E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		489D75F22C5967ED005F10E8 /* ListsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsCell.swift; sourceTree = "<group>"; };
+		489D75F42C59718B005F10E8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		489D75F62C5972CD005F10E8 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				484A895D2C57D7390055DFE2 /* AppDelegate.swift */,
 				484A895F2C57D7390055DFE2 /* SceneDelegate.swift */,
 				484A89712C57DA5B0055DFE2 /* Lists.swift */,
+				489D75F62C5972CD005F10E8 /* Details.swift */,
+				489D75F42C59718B005F10E8 /* Global.swift */,
 				489D75F22C5967ED005F10E8 /* ListsCell.swift */,
 				484A89632C57D7390055DFE2 /* Main.storyboard */,
 				484A89662C57D73A0055DFE2 /* Assets.xcassets */,
@@ -146,7 +152,9 @@
 			files = (
 				489D75F32C5967ED005F10E8 /* ListsCell.swift in Sources */,
 				484A895E2C57D7390055DFE2 /* AppDelegate.swift in Sources */,
+				489D75F72C5972CD005F10E8 /* Details.swift in Sources */,
 				484A89602C57D7390055DFE2 /* SceneDelegate.swift in Sources */,
+				489D75F52C59718B005F10E8 /* Global.swift in Sources */,
 				484A89722C57DA5B0055DFE2 /* Lists.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
